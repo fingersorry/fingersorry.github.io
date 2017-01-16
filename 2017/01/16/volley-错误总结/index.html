@@ -86,12 +86,22 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="FingerSorry">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="NullPointerException在编译Android Studio的时候遇到了这个错误：
+
+onErrorResponse: com.android.volley.VolleyError: java.lang.NullPointerException: Attempt to read from field ‘com.android.volley.Cache$Entry com.androi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="volley 错误总结">
+<meta property="og:url" content="http://yoursite.com/2017/01/16/volley-错误总结/index.html">
 <meta property="og:site_name" content="FingerSorry">
+<meta property="og:description" content="NullPointerException在编译Android Studio的时候遇到了这个错误：
+
+onErrorResponse: com.android.volley.VolleyError: java.lang.NullPointerException: Attempt to read from field ‘com.android.volley.Cache$Entry com.androi">
+<meta property="og:updated_time" content="2017-01-16T09:09:17.356Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="FingerSorry">
+<meta name="twitter:title" content="volley 错误总结">
+<meta name="twitter:description" content="NullPointerException在编译Android Studio的时候遇到了这个错误：
+
+onErrorResponse: com.android.volley.VolleyError: java.lang.NullPointerException: Attempt to read from field ‘com.android.volley.Cache$Entry com.androi">
 
 
 
@@ -109,7 +119,7 @@
   };
 </script>
 
-  <title> FingerSorry </title>
+  <title> volley 错误总结 | FingerSorry </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -140,9 +150,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -249,9 +257,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -271,10 +279,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/01/16/volley-错误总结/" itemprop="url">
-                  volley 错误总结
-                </a>
+                volley 错误总结
               
             
           </h1>
@@ -330,9 +335,7 @@
       
 
       
-        
-          
-            <h1 id="NullPointerException"><a href="#NullPointerException" class="headerlink" title="NullPointerException"></a>NullPointerException</h1><p>在编译Android Studio的时候遇到了这个错误：</p>
+        <h1 id="NullPointerException"><a href="#NullPointerException" class="headerlink" title="NullPointerException"></a>NullPointerException</h1><p>在编译Android Studio的时候遇到了这个错误：</p>
 <blockquote>
 <p>onErrorResponse: com.android.volley.VolleyError: java.lang.NullPointerException: Attempt to read from field ‘com.android.volley.Cache$Entry com.android.volley.Response.cacheEntry’ on a null object reference</p>
 </blockquote>
@@ -342,16 +345,19 @@
 </blockquote>
 <p>然后想到了我使用的是自定义的request方法，在<strong>parseNetworkResponse()</strong> 方法中，对相应的数据进行了处理，然后截取了volley默认的相应。在ErrorListener中没有相应内容，导致了这个问题。</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -359,262 +365,32 @@
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/01/12/article-title/" rel="next" title="article title">
+                <i class="fa fa-chevron-left"></i> article title
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2017/01/12/article-title/" itemprop="url">
-                  article title
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-12T14:48:16+08:00" content="2017-01-12">
-              2017-01-12
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2017/01/12/article-title/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/12/article-title/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2017/01/12/article-title/" class="leancloud_visitors" data-flag-title="article title">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h4 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h4><ol>
-<li>第一节</li>
-</ol>
-<ul>
-<li>第二节<ul>
-<li>第一小节（推荐每层次缩进四个空格）<ul>
-<li>小小节 1</li>
-<li>小小节 2</li>
-</ul>
-</li>
-<li><strong>第二小节</strong></li>
-</ul>
-</li>
-</ul>
-<hr>
-<h1 id="5-其他"><a href="#5-其他" class="headerlink" title="5. 其他"></a><a href="http://www.baidu.com" target="_blank" rel="external">5. 其他</a></h1><p>你可能还没注意到本文每部分之间的分割线和 ‘其他’ 的链接起始没有链接 我爱 ‘分割线’, 我爱 <a href="http://www.baidu.com" target="_blank" rel="external"><strong>链接</strong></a>,哪怕它只有颜色~</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/01/12/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-12T14:29:03+08:00" content="2017-01-12">
-              2017-01-12
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2017/01/12/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/12/hello-world/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2017/01/12/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -622,6 +398,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/01/16/volley-错误总结/"
+           data-title="volley 错误总结" data-url="http://yoursite.com/2017/01/16/volley-错误总结/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -641,8 +425,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -685,6 +478,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#NullPointerException"><span class="nav-number">1.</span> <span class="nav-text">NullPointerException</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -781,6 +585,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 

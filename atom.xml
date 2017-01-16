@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-12T07:16:28.364Z</updated>
+  <updated>2017-01-16T09:09:17.356Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>volley 错误总结</title>
+    <link href="http://yoursite.com/2017/01/16/volley-%E9%94%99%E8%AF%AF%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2017/01/16/volley-错误总结/</id>
+    <published>2017-01-16T08:52:07.000Z</published>
+    <updated>2017-01-16T09:09:17.356Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="NullPointerException"><a href="#NullPointerException" class="headerlink" title="NullPointerException"></a>NullPointerException</h1><p>在编译Android Studio的时候遇到了这个错误：</p>
+<blockquote>
+<p>onErrorResponse: com.android.volley.VolleyError: java.lang.NullPointerException: Attempt to read from field ‘com.android.volley.Cache$Entry com.android.volley.Response.cacheEntry’ on a null object reference</p>
+</blockquote>
+<p>这个就是不知道哪里出现了空指针。耽误了我一天的时间。硬着头皮理解了一遍，大概意思是：</p>
+<blockquote>
+<p>错误的回复:VolleyError:出现了空指针，不能读取，一个空的引用</p>
+</blockquote>
+<p>然后想到了我使用的是自定义的request方法，在<strong>parseNetworkResponse()</strong> 方法中，对相应的数据进行了处理，然后截取了volley默认的相应。在ErrorListener中没有相应内容，导致了这个问题。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;NullPointerException&quot;&gt;&lt;a href=&quot;#NullPointerException&quot; class=&quot;headerlink&quot; title=&quot;NullPointerException&quot;&gt;&lt;/a&gt;NullPointerException&lt;/h1&gt;&lt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>article title</title>
